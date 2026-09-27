@@ -1,0 +1,29 @@
+MELLO — NEXT ONLINE VERSION
+
+Included:
+- index.html — Mello browser app
+- mello-config.js — your Supabase Project URL + publishable key
+- mello-logo.png — Mello logo
+- mello-supabase-social.sql — database tables/RLS for follows, private requests, private messages, Notes, Reels, Reel likes/comments, profile settings, and Reel storage
+
+IMPORTANT:
+1. In Supabase SQL Editor, run mello-supabase-social.sql once.
+2. Do NOT put a Supabase secret/service_role key in the browser.
+3. Your current Supabase Auth setting has Confirm Email OFF, so the account can sign in without email confirmation.
+4. Upload all 3 web files (index.html, mello-config.js, mello-logo.png) to your existing Vercel Mello project.
+5. Open your Mello site and test with a real account.
+
+Mello behavior in this version:
+- New accounts start with 0 followers and 0 following.
+- No demo users or fake conversations are shown.
+- Real user search + follow/follow-request flow.
+- Public/private accounts.
+- Real private messages with participant-only RLS.
+- Mello Reels upload to Supabase Storage.
+- Mello Notes with song title/artist information.
+- Mello Stickers.
+- Profile Settings with edit profile, privacy, message privacy, notifications, Notes, Reels, Stickers, and sign out.
+- Larger navigation buttons for easier tapping.
+
+Mello.com:
+The app branding is Mello. The exact mello.com domain is already registered, so it cannot be connected unless its current owner makes it available. Your current browser deployment can continue using your Vercel address until you own a domain.
